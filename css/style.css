@@ -1,0 +1,40 @@
+body {
+    font-family: arial;
+}
+
+.header {
+    background-color: blue;
+    color: white;
+    padding: 30px;
+    font-size: 25pt;
+}
+
+.header::first-line {
+    color: yellow;
+    font-size: 35pt;
+}
+
+nav {
+    margin: 10px 0px;
+    border-style: dashed;
+    width: 30%;
+    height: auto;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#link:hover {
+    color: red;
+}
+
+.content {
+    width: 100%;
+    
+}
+
+.footer{
+    background-color: lightblue;
+    text-align: right;
+    font-size: 15pt;
+    padding: 20px;
+}

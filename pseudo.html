@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Pseudo Selector</title>
+        <style>
+            p.utama {
+                display: none;
+                background-color: darkgray;
+                padding: 20px;
+            }
+
+            div:hover p.utama {
+                display: block;
+            }
+
+            /*Percobaan ubah warna saat hover*/
+            div:hover a {
+                color: red;
+                font-size: 25px;
+            }
+            
+            a {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div> Letakkan kursor disini untuk melihat element
+            <p class="utama"> Saya adalah element p </p>
+            
+        </div>
+        <div>
+            <p><a href="https://www.youtube.com" target="_blank"> Youtube </a></p>
+        </div>
+    </body>
+</html>

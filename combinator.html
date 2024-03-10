@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Combinator Selector</title>
+        <style>
+            div p { /* no. 1 */
+                color: red;
+            }
+            div > p { /* no. 2 */
+                background-color: yellow;
+            }
+            div + p { /* no. 3 */
+                background-color: darkgray;
+            }
+            div ~ p { /* no. 4 */
+                color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p> This is a paragraph. Selector ini memilih semua elemen "p" yang berada di dalam sebuah elemen "div". 
+                Dalam hal ini, semua elemen "p" yang berada di dalam elemen "div" akan memiliki warna teks merah. </p>
+            <p> This is a paragraph. Selector ini memilih semua elemen "p" yang langsung berada di dalam sebuah elemen "div". 
+                Artinya, hanya elemen "p" yang menjadi anak langsung dari elemen "div" yang dipilih. </p>
+        </div>
+        <p> This is a paragraph. Selector ini memilih elemen "p" yang berada tepat setelah sebuah elemen "div" di dalam struktur dokumen. 
+            Artinya, hanya elemen "p" yang menjadi saudara kandung (sibling) dari elemen "div" yang dipilih. </p>
+        <p> This is a paragraph. Selector ini memilih semua elemen "p" yang berada setelah sebuah elemen 'div' di dalam struktur dokumen, 
+            namun tidak harus menjadi elemen saudara kandung langsung dari elemen "div". </p>
+    </body>
+</html>
